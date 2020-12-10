@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-title>Sessional Helper</mat-card-title>
+    <mat-card-content>
+        <h2>Add Time-Table</h2>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Subject Code</mat-label>
+            <input matInput [(ngModel)] = "ename">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Semester</mat-label>
+            <input matInput [(ngModel)] = "ecat">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Subject Name</mat-label>
+            <input matInput [(ngModel)] = "subject">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Date of Examination</mat-label>
+            <input matInput [(ngModel)] = "edate">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Time of Exam</mat-label>
+            <input matInput [(ngModel)] = "time">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addExpense()">SUBMIT</button>
+    </mat-card-content>
+    <mat-card-content>
+        <h2>Syllabus</h2>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Syllabus</mat-label>
+            <input matInput [(ngModel)] = "cname">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-right: 10px;">
+            <mat-label>Threshold</mat-label>
+            <input matInput [(ngModel)] = "cthreshold">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addCategory()">SUBMIT</button>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,13 @@
+.framebox {
+    display: table-row;
+    width: 100%;
+}
+
+.framebox .entry {
+    display: table-cell;
+}
+
+app-daily-list {
+
+    flex-grow: 1;
+}

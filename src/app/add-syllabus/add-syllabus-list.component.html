@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>Category-Wise List</mat-card-title>
+    <mat-card-content>
+        <mat-list *ngFor="let entry of categoryList; let i = index">
+            <mat-list-item>
+                {{ i + 1 }}. Name: {{ entry.name }} Threshold: {{ entry.threshold }}
+                <button class="delete_button" mat-icon-button color="warn" (click)="fbService.delete(entry._id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
